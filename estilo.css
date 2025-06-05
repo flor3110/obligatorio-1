@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --azul: #0037FF;
+    --magenta: #FF0873;
+    --amarillo: #FFCF1E;
+    --blanco: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+a {
+
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/*HEADER*/
+
+header img {
+    width: 80px;
+    height: 80px;
+
+}
+
+#hamburguesa {
+    color: var(--amarillo);
+    padding: 20px;
+
+
+}
+
+header {
+    background-color: var(--azul);
+    justify-content: space-between;
+    display: flex;
+    padding: 1em;
+
+}
+
+nav {
+    display: none;
+}
+
+
+/*INICIO*/
+
+#inicio {
+    height: 100vh;
+    background-image: url(imagenes/FONDO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-content: start;
+    position: relative;
+
+}
+
+#inicio h1 {
+    font-size: 3em;
+    color: var(--amarillo);
+    position: absolute;
+    bottom: 0;
+    left: 2em;
+}
+
+#inicio p {
+    font-size: 0.5em;
+    color: var(--blanco);
+    text-align: center;
+    position: absolute;
+    width: 200px;
+
+}
+
+#inicio p {
+    display: none;
+}
+
+
+
+/*SECCION 2*/
+
+#cronograma {
+    background-color: var(--amarillo);
+    display: block;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+
+
+}
+
+#cronograma div {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cronograma h2 {
+    font-size: 4em;
+    padding: 0.5em;
+    color: var(--magenta);
+
+}
+
+#cronograma article h3 {
+    color: var(--amarillo);
+    font-size: 2em;
+}
+
+#cronograma article p {
+    font-size: 1em;
+    width: 250px;
+    color: var(--blanco);
+}
+
+#cronograma article {
+    display: flex;
+    padding: 1em;
+    margin: 2em;
+    margin-bottom: 1em;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--magenta);
+    width: 300px;
+    gap: 2em;
+    bottom: 20px;
+
+
+
+}
+
+#cronograma article img {
+    width: 200px;
+    height: 300px;
+
+}
+
+#cronograma a {
+    background-color: var(--amarillo);
+    border-radius: 2px;
+    color: var(--azul);
+    padding: 0.2em;
+    width: 50px;
+    margin: 1em;
+}
+
+#cronograma a:hover {
+    background-color: var(--azul);
+    color: var(--amarillo);
+
+}
+
+#cronograma article:nth-of-type(5) {
+    display: none;
+}
+
+#cronograma article:nth-of-type(4) img {
+    display: none;
+}
+
+/*SECCION 3*/
+
+
+#nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-rows: 300px 300px 300px;
+    gap: 5px;
+
+}
+
+#nosotros img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+#nosotros article {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--magenta);
+    height: 100%;
+}
+
+#nosotros h3 {
+    font-size: 3em;
+    color: var(--blanco);
+
+}
+
+#nosotros a {
+    font-size: 1.5em;
+    color: var(--azul);
+    background-color: var(--amarillo);
+    border-radius: 3px;
+    padding: 6px;
+
+}
+
+#nosotros a:hover {
+    background-color: var(--azul);
+    color: var(--magenta);
+    border-radius: 3px;
+}
+
+
+#nosotros div:nth-of-type(5) {
+    display: none;
+}
+#nosotros div:nth-of-type(6) {
+    display: none;
+}
+#nosotros div:nth-of-type(4){
+    display: none;
+}
+
+#nosotros div:nth-of-type(1) {
+    background-color: var(--azul);
+}
+#nosotros div:nth-of-type(3){
+    display: flex;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+
+}
+
+footer h2 {
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-size: 30px;
+
+}
+
+footer form ::placeholder {
+    font-size: 10px;
+}
+
+footer form input {
+    border: 5px solid var(--amarillo);
+    background-color: var(--amarillo);
+    width: 150px;
+    height: 30px;
+}
+
+footer form button {
+    color: var(--azul);
+    background-color: var(--magenta);
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+footer div:nth-of-type(1) {
+    background-color: var(--azul);
+    padding: 20px;
+    text-align: center;
+}
+
+footer div:nth-of-type(2) {
+    background-color: var(--magenta);
+    padding: 20px;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 30px;
+
+}
+
+footer div:nth-of-type(2) img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+
+/*TABLET*/
+
+@media all and (min-width:768px) {
+    
+
+    #hamburguesa {
+        display: none;
+    }
+
+    header {
+        height: 100px;
+        justify-content: space-between;
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    nav {
+        display: block;
+    }
+
+    header nav a {
+        font-size: 30px;
+        background-color: var(--amarillo);
+        border-radius: 3px;
+        color: var(--magenta);
+        padding: 0.2em;
+        margin: 0.1em;
+
+
+    }
+
+    #botondif {
+        background-color: var(--magenta);
+        color: var(--amarillo);
+    }
+
+    header nav a:hover {
+        background-color: var(--magenta);
+        color: var(--amarillo);
+
+    }
+
+    #botondif:hover {
+        border: 3px solid var(--amarillo);
+        background-color: transparent;
+        color: var(--amarillo);
+    }
+
+
+
+
+    /*SECCION 2*/
+#cronograma h2{
+    width: 100%;
+}
+
+    #cronograma div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;       
+        margin: auto;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+
+    #cronograma article {
+        display: flex;
+        padding: 1em;
+        margin: 0;
+        margin-bottom: 1em;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: var(--magenta);
+        width: 48%;
+        gap: 1em;
+        align-items: start;
+
+
+    }
+
+    #cronograma article img {
+        width: 250px;
+        height: 400px;
+    }
+
+    #cronograma a {
+        background-color: var(--amarillo);
+        border-radius: 2px;
+        color: var(--azul);
+        padding: 0.2em;
+        width: 50px;
+        margin: 1em;
+    }
+
+    #cronograma a:hover {
+        background-color: var(--azul);
+        color: var(--amarillo);
+
+    }
+    #cronograma article:nth-of-type(4) img {
+        display: block;
+    }
+
+
+    /*SECCION 3*/
+
+#nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#nosotros img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#nosotros div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    grid-row: span 2;
+    
+}
+
+#nosotros div:nth-of-type(2) article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#nosotros div:nth-of-type(4) {
+position: relative;
+display: flex;
+grid-column: span 2;
+align-items: flex-end;
+
+}
+#nosotros div:nth-of-type(4) div {
+
+    position: absolute;
+    height: 100%;
+    background-color: var(--amarillo);
+      
+
+}
+
+#nosotros div:nth-of-type(4) h2 {
+font-size: 40px;
+color: var(--magenta);
+}
+#nosotros div:nth-of-type(4) p {
+font-size: 20px;
+color: var(--azul);
+
+}
+
+#nosotros div:nth-of-type(6){
+    display: none;
+}
+
+
+
+/*FOOTER*/
+
+
+footer h2 {
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-size: 40px;
+
+}
+
+footer form ::placeholder {
+    font-size: 20px;
+}
+
+footer form input {
+    border: 5px solid var(--amarillo);
+    background-color: var(--amarillo);
+    width: 200px;
+    height: 50px;
+}
+
+footer form button {
+    color: var(--azul);
+    background-color: var(--magenta);
+    border-radius: 2px;
+    font-size: 25px;
+    padding: 3px;
+}
+
+footer div:nth-of-type(1) {
+    background-color: var(--azul);
+    padding: 20px;
+    text-align: center;
+}
+
+footer div:nth-of-type(2) {
+    background-color: var(--magenta);
+    padding: 20px;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 40px;
+
+}
+
+footer div:nth-of-type(2) img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+
+}
+
+
+
+
+    /*DESKTOP*/
+
+    @media all and (min-width:1920px) {
+        /*INICIO*/
+
+
+        #inicio {
+            height: 100vh;
+            background-image: url(imagenes/FONDO.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+
+        }
+
+        #inicio h1 {
+            font-size: 6em;
+            color: var(--amarillo);
+            position: relative;
+            display: flex;
+            bottom: -12em;
+            left: 12em;
+            
+
+        }
+
+        #inicio p {
+            font-size: 1.2em;
+            color: var(--blanco);
+            text-align: center;
+            position: relative;
+            bottom: -60em;
+            left: 60em;
+            width: 500px;
+            display: flex;
+            
+        }
+
+
+
+        /*SECCION2*/
+
+
+        #cronograma h2{
+            width: 100%;
+            text-align: center;
+        }
+
+        #cronograma article {
+            display: flex;
+            padding: 1em;
+            flex-direction: column;
+            border-radius: 20px;
+            background-color: var(--magenta);
+            width: 32%;
+            gap: 1em;
+            align-items: start;
+        }
+
+        #cronograma article:nth-of-type(5){
+        display: flex;
+        }
+
+        #cronograma{
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+
+
+
+
+        /*SECCION 3*/
+
+        #nosotros{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    #nosotros div:nth-of-type(5),#nosotros div:nth-of-type(6) {
+    display: flex;
+    background-color: var(--azul);
+
+}   
+
+#nosotros div:nth-of-type(4){
+    grid-column: 3/5;
+    grid-row: 1/2;
+
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer h2 {
+    font-size: 50px;
+}
+
+
+footer form input {
+    width: 250px;
+    height: 60px;
+}
+
+footer form button {
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+footer div:nth-of-type(2) {
+    font-size: 50px;
+}
+
+footer div:nth-of-type(2) img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+}
